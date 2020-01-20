@@ -21,6 +21,12 @@ class Dog extends Animal {
     }
 
 }
+let dog = new Dog("Rax")
+
+console.log(dog.eat())
+console.log(dog.sound())
+console.log("-------------------------------------------------------------------------------------")
+
 
 class Cat extends Animal {
 
@@ -28,7 +34,11 @@ class Cat extends Animal {
         return "Cat meows"
     }
 }
+let cat = new Dog("Stormy")
 
+console.log(cat.eat())
+console.log(cat.sound())
+console.log("-------------------------------------------------------------------------------------")
 
 class Home { 
     constructor(){
@@ -54,25 +64,23 @@ makeAllSounds(){
 var home = new Home();
 var dog1 = new Dog();
 var dog2 = new Dog();
-var cat = new Cat();
+var cat1 = new Cat();
 
 
 home.adoptPet(dog1)
 home.makeAllSounds()
-console.log("---------------------------------------")
-home.adoptPet(cat);
+console.log("-------------------------------------------------------------------------------------")
+
+home.adoptPet(cat1);
 home.makeAllSounds();
-console.log("---------------------------------------")
+console.log("-------------------------------------------------------------------------------------")
 
 home.adoptPet(dog2)
 home.makeAllSounds()
-console.log("---------------------------------------")
+console.log("-------------------------------------------------------------------------------------")
 
 home.adoptPet(dog2)
 home.makeAllSounds()
-console.log("---------------------------------------")
+console.log("-------------------------------------------------------------------------------------")
 
-module.exports= {
-    Dog,
-    Cat, 
-}
+
